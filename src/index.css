@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom Rose Gold Shimmer & Text */
+.rose-gold-gradient {
+  background: linear-gradient(135deg, #ECC8AF 0%, #E7A9B4 40%, #D88B97 70%, #C47281 100%);
+}
+
+.rose-gold-text {
+  background: linear-gradient(135deg, #A85361 0%, #BD6B7A 40%, #8A3746 80%, #C57D8B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rose-gold-border {
+  border-color: rgba(220, 150, 165, 0.45);
+}
+
+.gold-foil-border {
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #D4AF37 0%, #F5E09E 40%, #AA771C 70%, #E8C874 100%) border-box;
+}
+
+.rose-gold-foil-border {
+  border: 1.5px solid transparent;
+  background: linear-gradient(#FFFDFD, #FFF5F7) padding-box,
+              linear-gradient(135deg, #E6A1AF 0%, #F8D5DE 30%, #C47281 70%, #ECC8AF 100%) border-box;
+}
+
+/* Paper Textures */
+.paper-watercolor {
+  background-color: #FFFDF9;
+  background-image: radial-gradient(#F5E4E8 0.75px, transparent 0.75px), radial-gradient(#F5E4E8 0.75px, #FFFDF9 0.75px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.paper-linen {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(240, 215, 222, 0.15),
+    rgba(240, 215, 222, 0.15) 1px,
+    transparent 1px,
+    transparent 6px
+  ), #FFFAFB;
+}
+
+/* Shimmer Keyframes */
+@keyframes foilShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-foil-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: foilShimmer 3s infinite;
+}
+
+/* Subtle Floating Animation */
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+/* Perspective for 3D box */
+.perspective-box {
+  perspective: 1000px;
+}
+

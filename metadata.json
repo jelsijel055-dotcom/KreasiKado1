@@ -1,0 +1,6 @@
+{
+  "name": "KreasiKado",
+  "description": "Aplikasi berbasis AI untuk rekomendasi ide hadiah kreatif, kado sesuai anggaran, kartu ucapan otomatis, paket hamper, dan jasa pembungkusan kado estetik.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
