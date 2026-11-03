@@ -219,6 +219,14 @@ export const HamperStore: React.FC<HamperStoreProps> = ({
                     src={product.image}
                     alt={product.title}
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget as HTMLImageElement;
+                      if (!target.dataset.tried) {
+                        target.dataset.tried = 'true';
+                        const filename = product.image.split('/').pop();
+                        target.src = `/images/${filename}`;
+                      }
+                    }}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   {product.badge && (
@@ -317,6 +325,14 @@ export const HamperStore: React.FC<HamperStoreProps> = ({
                 src={activeModalProduct.image}
                 alt={activeModalProduct.title}
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget as HTMLImageElement;
+                  if (!target.dataset.tried) {
+                    target.dataset.tried = 'true';
+                    const filename = activeModalProduct.image.split('/').pop();
+                    target.src = `/images/${filename}`;
+                  }
+                }}
                 className="w-full h-full object-cover"
               />
             </div>

@@ -1,5 +1,17 @@
 import { HamperProduct, WrappingConfig } from '../types';
 
+import crochetTulipImg from '../assets/images/hamper_crochet_tulip_1793508762291.jpg';
+import cuteCatPawImg from '../assets/images/hamper_cute_cat_paw_1793508763218.jpg';
+import bunnySquishyImg from '../assets/images/hamper_bunny_squishy_1793508763211.jpg';
+import koreanJournalImg from '../assets/images/hamper_korean_journal_1793508764652.jpg';
+import wisudaPastelImg from '../assets/images/hamper_wisuda_pastel_1793505635334.jpg';
+import birthdayAestheticImg from '../assets/images/hamper_birthday_aesthetic_1793505636769.jpg';
+import roseCandleImg from '../assets/images/hamper_rose_candle_1793508366971.jpg';
+import coffeeStudyImg from '../assets/images/hamper_coffee_study_1793508366798.jpg';
+import snackPolaroidImg from '../assets/images/hamper_snack_polaroid_1793508367421.jpg';
+import budgetStudentImg from '../assets/images/hamper_budget_student_1793505636564.jpg';
+import wrappingServiceImg from '../assets/images/gift_wrapping_service_1793505637732.jpg';
+
 export const HAMPERS_CATALOG: HamperProduct[] = [
   {
     id: 'hamper-crochet-tulip',
@@ -11,7 +23,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 85000,
     rating: 5.0,
     reviewsCount: 184,
-    image: '/src/assets/images/hamper_crochet_tulip_1793508762291.jpg',
+    image: crochetTulipImg,
     badge: '🌸 Handmade Gemas',
     description: 'Rangkaian 6 tangkai bunga tulip pastel dan daisy rajutan benang wol lembut dalam vas keramik mungil berpita satin blush. Tahan selamanya tanpa layu!',
     itemsIncluded: [
@@ -34,7 +46,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 110000,
     rating: 4.9,
     reviewsCount: 147,
-    image: '/src/assets/images/hamper_cute_cat_paw_1793508763218.jpg',
+    image: cuteCatPawImg,
     badge: '🐱 Super Gemas',
     description: 'Cangkir keramik tebal bentuk cakar kucing warna pink blush lengkap dengan sendok emas kepala kucing, bando kuping kucing lembut, dan kaos kaki kitten tidur.',
     itemsIncluded: [
@@ -58,7 +70,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 125000,
     rating: 5.0,
     reviewsCount: 192,
-    image: '/src/assets/images/hamper_bunny_squishy_1793508763211.jpg',
+    image: bunnySquishyImg,
     badge: '🐰 Hangat & Nyaman',
     description: 'Lampu tidur silikon putih empuk bentuk kelinci manis yang menyala hangat saat ditekan. Dipadukan dengan lilin aromaterapi bentuk kue tart mini bertabur stroberi.',
     itemsIncluded: [
@@ -81,7 +93,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 98000,
     rating: 4.9,
     reviewsCount: 176,
-    image: '/src/assets/images/hamper_korean_journal_1793508764652.jpg',
+    image: koreanJournalImg,
     badge: '✨ Estetik Korea',
     description: 'Binder jurnal diary planner glitter transparan dengan gantungan kelinci imut, set 10 rol washi tape motif bunga pastel, pulpen kelinci, dan stiker deco.',
     itemsIncluded: [
@@ -105,7 +117,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 215000,
     rating: 4.9,
     reviewsCount: 142,
-    image: '/src/assets/images/hamper_wisuda_pastel_1793505635334.jpg',
+    image: wisudaPastelImg,
     badge: '🎓 Terlaris Wisuda',
     description: 'Paket hampers wisuda premium dalam hardbox blush pink dengan aksen foil rose gold. Cocok untuk teman sidang, sahabat wisuda, atau pasangan.',
     itemsIncluded: [
@@ -128,7 +140,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 165000,
     rating: 4.8,
     reviewsCount: 98,
-    image: '/src/assets/images/hamper_birthday_aesthetic_1793505636769.jpg',
+    image: birthdayAestheticImg,
     badge: '🎂 Best Value',
     description: 'Kotak hadiah ulang tahun serba estetik dengan sentuhan warna blush pink dan rose gold foil. Praktis, elegan, dan langsung siap dihadiahkan.',
     itemsIncluded: [
@@ -151,7 +163,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 160000,
     rating: 4.9,
     reviewsCount: 87,
-    image: '/src/assets/images/hamper_rose_candle_1793508366971.jpg',
+    image: roseCandleImg,
     badge: '💖 Paling Romantis',
     description: 'Rangkaian mawar abadi segar yang diawetkan bersama lilin wangi artisanal Rose & Blush dalam wadah tin rose gold berkilau.',
     itemsIncluded: [
@@ -174,7 +186,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 99000,
     rating: 4.9,
     reviewsCount: 165,
-    image: '/src/assets/images/hamper_coffee_study_1793508366798.jpg',
+    image: coffeeStudyImg,
     badge: '☕ Favorit Mahasiswa',
     description: 'Set kado fungsional bernuansa warm linen dan rustic kraft. Sangat pas untuk teman yang suka nongkrong di coffee shop atau sering begadang nugas.',
     itemsIncluded: [
@@ -197,7 +209,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 65000,
     rating: 4.8,
     reviewsCount: 210,
-    image: '/src/assets/images/hamper_snack_polaroid_1793508367421.jpg',
+    image: snackPolaroidImg,
     badge: '📸 Super Sentimental',
     description: 'Kotak kado buka atas dengan gantungan 4 foto polaroid kenangan yang diterangi lampu kelap-kelip fairy light, dilengkapi cokelat strawberry lezat.',
     itemsIncluded: [
@@ -220,7 +232,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 60000,
     rating: 4.9,
     reviewsCount: 230,
-    image: '/src/assets/images/hamper_budget_student_1793505636564.jpg',
+    image: budgetStudentImg,
     badge: '🌸 Ramah Kantong Pelajar',
     description: 'Solusi kado manis untuk mahasiswa dan pelajar dengan anggaran di bawah 50 ribu rupiah. Kualitas tetap terjamin dan packaging super aesthetic.',
     itemsIncluded: [
@@ -243,7 +255,7 @@ export const HAMPERS_CATALOG: HamperProduct[] = [
     originalPrice: 35000,
     rating: 5.0,
     reviewsCount: 310,
-    image: '/src/assets/images/gift_wrapping_service_1793505637732.jpg',
+    image: wrappingServiceImg,
     badge: '🎀 Jasa Populer',
     description: 'Jasa pembungkusan kado profesional untuk hadiah yang sudah kamu miliki. Menggunakan teknik lipatan presisi Jepang, pita satin rose gold mewah, segel lilin wax seal, dan aksen bunga kering.',
     itemsIncluded: [

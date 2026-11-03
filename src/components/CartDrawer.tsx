@@ -136,6 +136,14 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                       src={item.product.image}
                       alt={item.product.title}
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        if (!target.dataset.tried && item.product?.image) {
+                          target.dataset.tried = 'true';
+                          const filename = item.product.image.split('/').pop();
+                          target.src = `/images/${filename}`;
+                        }
+                      }}
                       className="w-16 h-16 rounded-xl object-cover border border-[#F5CAD4] shrink-0"
                     />
                   )}

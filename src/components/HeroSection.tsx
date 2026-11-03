@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, Heart, ArrowRight, ShieldCheck, DollarSign, Gift } from 'lucide-react';
+import heroGiftImg from '../assets/images/hero_gift_hamper_1793505635462.jpg';
 
 interface HeroSectionProps {
   onStartRecommender: () => void;
@@ -83,9 +84,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-pink-900/15 border border-[#F5CAD4] bg-white group">
               <img
-                src="/src/assets/images/hero_gift_hamper_1793505635462.jpg"
+                src={heroGiftImg}
                 alt="Presentasi hampers kado mewah bernuansa pastel pink dan rose gold"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = '/images/hero_gift_hamper_1793505635462.jpg';
+                }}
                 className="w-full h-[330px] sm:h-[400px] lg:h-[430px] object-cover group-hover:scale-103 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent flex flex-col justify-end p-6 text-white">
